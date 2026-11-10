@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="description" content="A read-only case study of a Python and Streamlit financial-report automation project.">
+<title>Earnings Flash Generator — Project Case Study</title>
+<style>body{margin:0;background:#f7f9f5;color:#182019;font:17px/1.65 system-ui,sans-serif}main{max-width:1020px;margin:auto;padding:64px 24px}h1{font-size:clamp(36px,6vw,62px);line-height:1.08;letter-spacing:-.04em;margin:12px 0 24px}h2{margin:52px 0 12px;font-size:28px}p{max-width:780px}.label{font-size:13px;letter-spacing:.12em;color:#315b28;text-transform:uppercase;font-weight:700}.stack{color:#52614f;font-size:15px}img{max-width:100%;height:auto;border:1px solid #dce5d5;background:white;margin:14px 0}figure{margin:24px 0}figcaption,footer{font-size:13px;color:#60705c}.report{max-width:740px}ul{padding-left:24px}footer{border-top:1px solid #dce5d5;margin-top:48px;padding-top:20px}</style>
+</head><body><main>
+<div class="label">Software project / Financial reporting</div><h1>Earnings Flash Generator</h1>
+<p>A local application that converts Dhaka Stock Exchange company disclosures into consistent, editable PowerPoint and searchable PDF earnings summaries.</p>
+<p class="stack">Python · Streamlit · Requests · XML / JSON · ReportLab · Pillow · C# · Git</p>
+<h2>The problem</h2><p>Preparing an earnings flash requires collecting public disclosures, checking comparable periods and transferring figures into a consistent report. Manual copying makes the process repetitive and can mix quarterly and cumulative results.</p>
+<h2>What I built</h2><ul><li>DSE ticker lookup and structured financial-disclosure parsing.</li><li>Explicit period and unit checks, with missing figures kept distinct from zero.</li><li>Automatic issuer-logo lookup with an optional saved replacement.</li><li>Rule-based earnings commentary drawn from matching public disclosures, with editable wording.</li><li>Editable PowerPoint and searchable PDF exports using one approved report layout.</li><li>A Windows launcher and a regression suite with 46 checks.</li></ul>
+<h2>Application preview</h2><figure><img src="app-preview.png" alt="Local earnings-report application showing ticker lookup and a report preview"><figcaption>Screenshot of the local application using public BSC disclosures. Market figures are dated demonstration data.</figcaption></figure>
+<h2>Report preview</h2><figure class="report"><img src="earnings-flash.png" alt="One-page earnings report with financial comparisons and research commentary"><figcaption>Example output layout. The full app produces editable PowerPoint and searchable PDF files.</figcaption></figure>
+<h2>Design choices</h2><p>The application runs locally without an AI service or API key. Period comparisons use fixed rules rather than estimating missing financial totals. Downloads and exports remain on the user's machine.</p>
+<h2>Source and access</h2><p>The complete application repository is private. Source and implementation details can be shared with reviewers on request. This page is a read-only case study: it has no live app, uploads, backend or financial-data connection.</p>
+<footer>For information only. This case study is not a direct buy signal or an offer to buy or sell securities. Financial screenshots use public, dated disclosures. Logos identify their respective owners.</footer>
+</main></body></html>
