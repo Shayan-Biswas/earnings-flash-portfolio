@@ -1,13 +1,11 @@
-# Earnings Flash Generator — Portfolio Showcase
+# Earnings Flash Generator
 
-A static case study for a CV or project portfolio. Open `index.html` in a browser or serve this folder through a static host.
+A portfolio case study of a Windows app that turns Dhaka Stock Exchange disclosures into one-page earnings reports. Open [the case study](index.html) in a browser to see the workflow and report.
 
-![Application preview](app-preview.png)
+The app checks reporting periods before comparing figures, supports three report designs, and exports editable PowerPoint and searchable PDF files to a folder selected by the user. An optional logo upload applies a matching palette to both the report preview and exports.
 
-![Earnings report preview](earnings-flash.png)
+![Earnings Flash app with the report branding controls open and a blue report preview](app-preview.png)
 
-This folder contains only the case-study page and PNG previews. It does not include the application source, executables, templates, financial export files, saved data, credentials or local filesystem paths. The full app repository stays private.
+![BSC earnings report using a fictional blue Demo Research logo](earnings-flash.png)
 
-The project automates DSE-disclosure parsing, reporting-period checks, issuer-logo retrieval and PowerPoint/PDF reporting using Python, Streamlit and a C# Windows launcher. It includes 46 regression checks. Source is available to reviewers on request.
-
-The previews use public company disclosures and dated market figures. They demonstrate the software rather than an investment recommendation.
+The screenshots use a public BSC disclosure and dated market figures. The logo is fictional. Application source and implementation assets are kept in the private repository.
